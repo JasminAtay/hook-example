@@ -1,18 +1,20 @@
 import React from 'react'
 import { CssBaseline, Container, Typography } from '@material-ui/core';
 import ImageIcon from '@material-ui/icons/Image';
+import SearchBar from './SearchBar';
 
 const App = () => {
     return (
-        <React.Fragment>
+        <>
             <CssBaseline />
-            <Container maxWidth="large">
+            <Container maxWidth="lg">
                 <Typography variant="h4" gutterBottom>
-                    <ImageIcon style={{ fontSize: 40, margin: 15 }}/>
+                    <ImageIcon style={{ fontSize: 40, margin: 5 }}/>
                     React Pic Search
                 </Typography>
             </Container>
-        </React.Fragment>
+            <SearchBar/>
+        </>
     )
 }
 
