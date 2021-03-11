@@ -4,9 +4,12 @@
 "predeploy": "npm run build", 
 "deploy": "gh-pages -d build", 
 "homepage": "https://jasminatay.github.io/hook-example"
+```yarn deploy``` for gh-pages branch
 
 ```yarn add @material-ui/core``` Material ui library added
 ```yarn add @material-ui/icons``` Material ui icon added
+```yarn add axios``` Axios added
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

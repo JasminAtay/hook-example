@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Paper, InputBase, Divider, IconButton} from '@material-ui/core';
+import { Paper, InputBase, Divider, IconButton } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,32 +24,30 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const SearchBar = () => {
+const SearchBar = ({ send }) => {
     const classes = useStyles();
-
-    const [ state, setState] = useState('');
-    console.log(`state: `, state);
+    const [state, setState] = useState('');
+    const onFormSubmit = (e) => {
+        e.preventDefault();
+        send(state);
+    };
 
 
     return (
-        <Paper 
-        component="form" 
-        onSubmit={() => { }} 
-        className={classes.root}
-        >
+        <Paper component="form" onSubmit={onFormSubmit} className={classes.root}>
 
-            <InputBase 
-            className={classes.input} 
-            placeholder="Search" 
-            value={state}
-            onChange={(e)=> setState(e.target.value)} />
+            <InputBase
+                className={classes.input}
+                placeholder="Search"
+                value={state}
+                onChange={(e) => setState(e.target.value)} />
 
             <Divider className={classes.divider} orientation="vertical" />
 
-            <IconButton 
-            type="submit" 
-            className={classes.iconButton} 
-            aria-label="search"
+            <IconButton
+                type="submit"
+                className={classes.iconButton}
+                aria-label="search"
             >
                 <SearchIcon />
             </IconButton>
