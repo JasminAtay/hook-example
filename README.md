@@ -1,7 +1,12 @@
+# gh-pages
+
 ```yarn add -D gh-pages``` then scripts added to pakage.json 
 "predeploy": "npm run build", 
 "deploy": "gh-pages -d build", 
 "homepage": "https://jasminatay.github.io/hook-example"
+
+```yarn add @material-ui/core``` Material ui library added
+```yarn add @material-ui/icons``` Material ui icon added
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
