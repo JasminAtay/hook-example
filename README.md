@@ -1,7 +1,7 @@
 ```yarn add -D gh-pages``` then scripts added to pakage.json 
 "predeploy": "npm run build", 
 "deploy": "gh-pages -d build", 
-"homepage": "https://jasminatay.github.io/season-display"
+"homepage": "https://jasminatay.github.io/hook-example"
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
